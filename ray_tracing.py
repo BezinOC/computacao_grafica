@@ -42,11 +42,11 @@ def hit_sphere(center, radius, ray_origin, ray_direction):
 
 # Função que implementa o modelo de iluminação
 def phong_lighting(ray_origin, ray_direction, t, normal):
-    ambient_color = np.array([0.1, 0.1, 0.1])  # Ambient color
-    diffuse_color = np.array([1.0, 0.5, 0.0])  # Diffuse color (orange)
-    specular_color = np.array([1.0, 1.0, 1.0])  # Specular color (white)
-    light_position = np.array([2.0, 2.0, 1.0])  # Position of the light source
-    light_color = np.array([1.0, 1.0, 1.0])  # Light color
+    ambient_color = np.array([0.1, 0.1, 0.1])  
+    diffuse_color = np.array([1.0, 0.5, 0.0])  
+    specular_color = np.array([1.0, 1.0, 1.0]) 
+    light_position = np.array([2.0, 2.0, 1.0]) 
+    light_color = np.array([1.0, 1.0, 1.0])  
     
     ambient = ambient_color * diffuse_color
     
